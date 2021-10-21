@@ -1,0 +1,54 @@
+body{
+  background-color: rgb(186, 241, 255);
+}
+
+.header{
+  color: azure;
+  text-align: center;
+}
+
+.header h1{
+  font-size: 30px;
+  color: azure;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.container{
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 580px;
+  background-color: rgb(128, 147, 255);
+  text-align: center;
+}
+
+.grid{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.celula{
+  width: 170px;
+  height: 160px;
+  margin: 4px 2px;
+  font-size: 100pt;
+  padding-top: 10px;
+  border-radius: 7px;
+  text-align: center;
+  background-color: rgb(193, 225, 255);
+}
+
+#reset{
+  background-color: rgb(0, 20, 199);
+  color: azure;
+  font-size: 150%;
+  border-style: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
