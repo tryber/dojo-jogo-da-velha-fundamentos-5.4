@@ -19,7 +19,7 @@ const combinacoes =[
 
 //Função que gera as celulas com classe e id fixando-as na grid
 function gerarCelulas(){
-  for (let i = 0; i < 9; i+=) {
+  for (let i = 0; i < 9; i+=1) {
     let celula = document.createElement('div');
     celula.className = 'celula';
     celula.id = i;
