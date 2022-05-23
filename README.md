@@ -6,7 +6,7 @@ Boas-vindas ao repositório do Jogo da Velha, esse dojo foi desenvolvido com o i
 
 ## Clonando o repositório :package:
 
-```git@github.com:tryber/sd-017-dojo-js-dom.git```
+```git@github.com:tryber/dojo-jogo-da-velha-fundamentos-5.4.git```
 
 ## Explicação :white_check_mark:
 
