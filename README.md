@@ -27,7 +27,7 @@ Cada index do array de combinações contem um array de posições.
 ## Passo a Passo :runner:
 
  - Crie uma função para gerar de maneira dinâmica `9 divs`
-	- Deve conter a `classe célula`
+	- Deve conter a `classe celula`
 	- Deve conter o `id` numerados de 0 a 8
 	- Deve ser filho da `div grid`
 	- Deve conter um evento de click chamando uma função com o nome Jogar
