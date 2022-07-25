@@ -1,6 +1,7 @@
+
 # Dojo Jogo da Velha! :older_woman:
 
-Boas-vindas ao repositório do Jogo da Velha, esse dojo foi desenvolvido com o intuito de estar ajudando a praticar o conteúdo visto até o momento. 
+Boas-vindas ao repositório do Jogo da Velha, esse dojo foi desenvolvido com o intuito de ajudar a praticar o conteúdo visto até o momento. 
 
 <center><img src="https://media1.giphy.com/media/6sS1G3MoTdQG8ol0Jd/giphy.gif?cid=790b7611e8a601e2d915b04089fefaf71fbf5f37b842736a&rid=giphy.gif&ct=g" width="416" height="480" ></img></center>
 
@@ -25,38 +26,45 @@ No arquivo js já existe um array com todas as combinações possíveis do jogo 
 
 Cada index do array de combinações contem um array de posições.
 
-## Passo a Passo :runner:
+## Requisitos :runner:
 
- - Crie uma função para gerar de maneira dinâmica `9 divs`
+ 1. Crie uma função para gerar de maneira dinâmica `9 divs`
 	- Deve conter a `classe celula`
 	- Deve conter o `id` numerados de 0 a 8
 	- Deve ser filho da `div grid`
-	- Deve conter um evento de click chamando uma função com o nome Jogar
+	- Cada div deve possuir um evento de click chamando uma função com o nome Jogar(Faremos no requisito)
 
--	Crie a função Jogar que deve receber o evento do click
+ 2. Crie a função Jogar que deve receber o evento do click
 	- Deve guardar o alvo clicado
 	- Checar de qual jogador é o turno 
-	- Alterar o texto com o `id player` para o texto jogador da vez ( X ou O )
+	- Alterar o texto com o `id player` para o texto do jogador da vez ( X ou O )
 	- Alterar o texto do alvo clicado para o texto do jogador da vez ( X ou O )
-	-  Alterar o turno dos jogadores
+	- Alterar o turno dos jogadores
 
-- Crie uma função que receba de quem foi o turno e deve checar se houve algum ganhador
+ 3. Desenvolva uma função que recebe de quem foi o turno e deve verificar se houve algum ganhador
 	- Deve passar por cada index do array de combinações
-	- Checar se cada posição dentro do array contem o texto do jogador da vez ( X ou O )
+	- Verificar se cada posição dentro do array contem o texto do jogador da vez ( X ou O )
 	- Somar um ponto para cada posição que conter o texto do jogador da vez dentro do array
-	- Checar se os pontos são maiores ou iguais a 3
-	- Alterar texto com o id player para o jogador ganhador caso tenha feito 3 pontos
+	- Checar se a pontuação é maior ou igual a 3
+	- Alterar texto com o `id player` para o jogador que conseguiu fazer 3 pontos.
+		- Exemplo: "Jogador X ganhou!"
+	
+4. Crie uma função para limpar as células do jogo
+	- Deve passar por cada célula removendo o X ou O
+	- Adicione um evento de click ao botão com o `id reset` passando essa função como parâmetro. 
+ 
+ **Bônus** 
 
-- Crie uma função que verifique se deu empate
+ 5. Crie uma função que verifique se deu empate
 	- Deve passar por todas as células verificando se não estão vazias
+	- Caso todas estejam preenchidas o jogo deu empate
 	- Alterar o texto com o id player para Empatou
--	Crie uma função para resetar o jogo
-	- Deve limpar todas as celulas 
+		- Dica: Essa função só é chamada após verificar se houve um ganhador.
+	
 
-- Adicione um evento de click ao botão com o id reset passando a função resetar 
 
 ## Finalizando :trophy:
-Chegamos ao fim do jogo da velha, você foi capaz de utilizar e treinar os conteúdos vistos até aqui como :
+Chegamos ao fim do jogo da velha, você conseguiu utilizar e treinar os conteúdos vistos até aqui como:
  - Logica de programação
  - Laços de repetição
  - Arrays
